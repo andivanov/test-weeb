@@ -1,6 +1,16 @@
 // bower:scss
 // endbower
 
-@import "reset", "variables", "global";
+@import "compass";
+
+//ggs - device width comes from variables file
+@import "../../bower_components/spread-ggs/sass/spread-scss/variables";
+@import "../../bower_components/spread-ggs/sass/spread-scss/global-elements";
+@import "../../bower_components/spread-ggs/sass/spread-scss/column-calculator";
+
+
+@import "reset"; // 1
+@import "variables"; // 2
+@import "general"; // 3
 
 
