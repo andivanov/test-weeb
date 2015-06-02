@@ -9,8 +9,8 @@
 @import "../../bower_components/spread-ggs/sass/spread-scss/column-calculator";
 
 
-@import "reset"; // 1
-@import "variables"; // 2
-@import "general"; // 3
+@import "reset"; // based on HTML5Reset
+@import "variables"; // my vars goes here
+@import "general"; // general, common styles goes here
 
 

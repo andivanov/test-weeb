@@ -1,18 +1,26 @@
 
 
-
-
 body {
   	background: #fafafa;
   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #333;
+  	color: $copyColor;
 }
 
 
-h1 {
-	@include adjust-font-size-to(50px);
-	line-height: 1.5;
-	color: #333;
+
+.page-header {
+	$headerMainColor: $copyColor;
+	$headerSubColor: $accentColor;
+	line-height: 2;
+	&__main {
+		color: $headerMainColor;
+		@include adjust-font-size-to(50px);
+	}
+	&__sub {
+		color: $headerSubColor;
+		@include adjust-font-size-to(30px);
+		text-transform: uppercase;
+	}
 }
 
 
