@@ -4,9 +4,13 @@
 @import "compass";
 
 //ggs - device width comes from variables file
-@import "../../bower_components/spread-ggs/sass/spread-scss/variables";
-@import "../../bower_components/spread-ggs/sass/spread-scss/global-elements";
-@import "../../bower_components/spread-ggs/sass/spread-scss/column-calculator";
+//@import "../../bower_components/spread-ggs/sass/spread-scss/variables";
+//@import "../../bower_components/spread-ggs/sass/spread-scss/global-elements";
+//@import "../../bower_components/spread-ggs/sass/spread-scss/column-calculator";
+
+
+//fontAwesome
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
 
 
 @import "reset"; // based on HTML5Reset
