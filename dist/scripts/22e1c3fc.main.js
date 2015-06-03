@@ -1,0 +1,1 @@
+Retina=function(){"use strict";return{init:function(){var a=window.devicePixelRatio?window.devicePixelRatio:1;a>1&&$("img").each(function(a,b){b=$(b),b.attr("data-src2x")&&(b.attr("data-src-orig",b.attr("src")),b.attr("src",b.attr("data-src2x")))})}}}(),Retina.init();
