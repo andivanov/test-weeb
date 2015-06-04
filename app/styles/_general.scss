@@ -1,11 +1,14 @@
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
+
+*, 
+*:before, 
+*:after {
+  	-webkit-box-sizing: inherit;
+  	-moz-box-sizing: inherit;
   	box-sizing: inherit;
 }
 
@@ -19,6 +22,7 @@ a {
 	color: $links-color;
 	text-decoration: none;
 }
+
 
 
 .header {
@@ -46,7 +50,7 @@ a {
 
 
 @media screen and (min-width: 768px){
-		top: -0.96em;
+
 }
 
 
@@ -54,7 +58,11 @@ a {
 
 
 @media screen and (min-width: 1024px){
-	.wrapper {
+	.wrapper__full-width {
+		background: $white;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.wrapper__fixed-width {
 		max-width: 1440px;
 		margin: 0 auto;
 	}		

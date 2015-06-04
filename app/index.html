@@ -60,59 +60,73 @@
 
 
 <body>
-    <div class="wrapper">
+
 
 <!-- *header -->    
-        <nav class="page-header">
-            <div class="page-header__menu">
-                <ul>
-                    <li class="page-header__menu__root">All Categories
-                        <!--
-                        <ul>
-                            <li>All Categories</li>
-                            <li>Marketing</li>
-                            <li>Commerce</li>
-                            <li>Other</li>
-                        </ul>
-                        -->
-                    </li>
-                </ul>
-            </div>    
-            <h1 class="page-header__title">Apps</h1>   
-            <div class="page-header__search">
-                <form>
-                    <input type="text" class="page-header__search__input">
-                </form>
-            </div>  
-        </nav>
+    <div class="wrapper__full-width">
+        <div class="wrapper__fixed-width">
+            <nav class="page-topbar">
+                <div class="page-topbar__menu">
+                    <ul>
+                        <li class="page-topbar__menu__root">All Categories
+                            <!--
+                            <ul>
+                                <li>All Categories</li>
+                                <li>Marketing</li>
+                                <li>Commerce</li>
+                                <li>Other</li>
+                            </ul>
+                            -->
+                        </li>
+                    </ul>
+                </div>    
+                <h1 class="page-topbar__title">Apps</h1>   
+                <div class="page-topbar__search">
+                    <form>
+                        <input type="text" class="page-topbar__search__input">
+                    </form>
+                </div>  
+            </nav>
+        </div>
+    </div>
+
 
 
 <!-- *carousel -->
-        <div class="marketplace-hero-carousel">
-            <ul>
-                <li class="marketplace-hero-carousel__item">
-                    <a href="app.html">
-                        <img src="images/marketplace/featured-samples/featured-app-evernote.jpg" data-src2x="images/marketplace/featured-samples/featured-app-evernote-2x.jpg" width="460" height="284">
-                    </a>
-                </li>
+    <div class="wrapper__full-width">
+        <div class="wrapper__fixed-width">
+            <div class="marketplace-hero-carousel">
+                <i class="marketplace-hero-carousel__arrow--left"></i>
+                <i class="marketplace-hero-carousel__arrow--right"></i>
+                <ul>
+                    <li class="marketplace-hero-carousel__item">
+                        <a href="#">
+                            <img src="images/marketplace/featured-samples/featured-app-evernote.jpg" data-src2x="images/marketplace/featured-samples/featured-app-evernote-2x.jpg" width="460" height="284">
+                        </a>
+                    </li>
 
-                <li class="marketplace-hero-carousel__item">
-                    <a href="app.html">
-                        <img src="images/marketplace/featured-samples/featured-app-mailchimp.jpg" data-src2x="images/marketplace/featured-samples/featured-app-mailchimp-2x.jpg" width="460" height="284">
-                    </a>
-                </li>
+                    <li class="marketplace-hero-carousel__item">
+                        <a href="app.html">
+                            <img src="images/marketplace/featured-samples/featured-app-mailchimp.jpg" data-src2x="images/marketplace/featured-samples/featured-app-mailchimp-2x.jpg" width="460" height="284">
+                        </a>
+                    </li>
 
-                <li class="marketplace-hero-carousel__item">
-                    <a href="app.html">
-                        <img src="images/marketplace/featured-samples/featured-app-amazon.jpg" data-src2x="images/marketplace/featured-samples/featured-app-amazon-2x.jpg" width="460" height="284">
-                    </a>
-                </li>
-            </ul>
+                    <li class="marketplace-hero-carousel__item">
+                        <a href="#  ">
+                            <img src="images/marketplace/featured-samples/featured-app-amazon.jpg" data-src2x="images/marketplace/featured-samples/featured-app-amazon-2x.jpg" width="460" height="284">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+
+
 
 
 <!-- *marketpalce -->
 <!-- *marketing -->
+    <div class="wrapper__fixed-width">
         <div class="marketplace-library">
             <div class="header__wrapper">
                 <h2 class="header__sub">Marketing</h2>
@@ -136,7 +150,7 @@
 
                 <a href="#" class="marketplace-library__item">
                     <img src="images/marketplace/sample-apps/Evernote.png" class="marketplace-library__item__image">
-                    <h3 class="marketplace-library__item__header">Evernote Reminder &...</h3>
+                    <h3 class="marketplace-library__item__header">Evernote Reminder</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa-star"></i>
                         <i class="fa-star"></i>
@@ -195,9 +209,9 @@
 
 <!-- *store -->      
         <div class="marketplace-library">
-            <div class="marketplace-library__header__wrapper">
-                <h2 class="marketplace-library__header header__sub">Store</h2>
-                <a href="#" class="marketplace-library__navigation">View All</a>
+             <div class="header__wrapper">
+                <h2 class="header__sub">Store</h2>
+                <a href="#" class="header__action--right">View All</a>
             </div>
 
             <div class="marketplace-library__items__wrapper">
@@ -275,8 +289,9 @@
 
 <!-- *elements -->
         <div class="marketplace-library">
-            <div class="marketplace-library__header__wrapper">
-                <h2 class="marketplace-library__header header__sub">Elements</h2>
+             <div class="header__wrapper">
+                <h2 class="header__sub">Elements</h2>
+                <a href="#" class="header__action--right">View All</a>
             </div>
 
             <div class="marketplace-library__items__wrapper">
@@ -295,7 +310,6 @@
                 </a>
             </div>
         </div><!-- .marketplace-library -->
-
     </div><!-- .wrapper -->
 
     <!-- build:js(.) scripts/vendor.js -->

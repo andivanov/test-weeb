@@ -1,9 +1,8 @@
-.page-header {
+.page-topbar {
 	$height: 60px;
 	height: $height - 2px;
 	line-height: $height;
 	background: $white;
-	border-bottom: 2px solid #e5e5e5;
 	text-align: center;
 	font-size: 18px;
 	@include font-semibold;

@@ -1,11 +1,40 @@
+.marketplace-library {
+	&__items__wrapper {
+		//text-align: center;
+	}
+	&__item {
+		width: 200px;
+		display: inline-block;
+		border: 1px solid #D4D5D6;
+		margin: 0 10px;
+		padding: 20px;
+		color: $copy-color;
+		background: $white;
+		&:hover {
+			border-color: $links-color;
+			@include box-shadow (1,1,1, #000);
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&__header {
+			font-size: 16px;
+		}
+		&__discription {
+			font-size: 14px;
+		}
+		&__action {
+			color: $links-color;	
+		}
+	}
+}
 
 
+@media screen and (min-width: 768px) {
 
-
-
-
-@media screen and (min-width: 768px){
-		top: -0.96em;
 }
 
 
