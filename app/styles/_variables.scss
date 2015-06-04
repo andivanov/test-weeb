@@ -1,16 +1,37 @@
 //Typography
 $base-font-size: 16px;
 $base-line-height: 24px;
-
 @include establish-baseline;
-
 $rhythm-unit: "rem";
 
+
+$font-family: "proxima-nova", sans-serif;
+@mixin font-light {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 300;
+}
+@mixin font-normal {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin font-semibold {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 600;
+}
 
 
 
 
 //Colors
-$copyColor: 	#333;
-$accentColor: 	#666;
-$linksColor: 	blue;
+$off-black: 	#363b3e;
+$white: 		#fff;
+$off-white: 	#f8f8f8;
+
+
+$copy-color: 	$off-black;
+
+$accent-color: 	#666;
+$links-color: 	#2990ea;
