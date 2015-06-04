@@ -1,8 +1,8 @@
 //Typography
-$base-font-size: 16px;
-$base-line-height: 24px;
-@include establish-baseline;
-$rhythm-unit: "rem";
+// $base-font-size: 16px;
+// $base-line-height: 24px;
+// @include establish-baseline;
+// $rhythm-unit: "rem";
 
 
 $font-family: "proxima-nova", sans-serif;
@@ -26,12 +26,17 @@ $font-family: "proxima-nova", sans-serif;
 
 
 //Colors
-$off-black: 	#363b3e;
-$white: 		#fff;
-$off-white: 	#f8f8f8;
+$off-black: 		#363b3e;
+$white: 			#fff;
+$off-white: 		#f8f8f8;
 
 
-$copy-color: 	$off-black;
+$copy-color: 		$off-black;
+$copy-color-light: 	#80868a;
 
-$accent-color: 	#666;
-$links-color: 	#2990ea;
+$accent-color: 		#666;
+
+$links-color: 		#2990ea;
+$links-color-hover: #7BC4FD;
+
+$border-color-dark: #A6A6A6;

@@ -5,20 +5,85 @@
 	background: $white;
 	text-align: center;
 	font-size: 18px;
-	@include font-semibold;
+	@include font-semibold;	
+
 	&__menu {
 		display: inline-block;
 		float: left;
 		padding-left: $height;
+		//top nav
+		&__item {
+			position:relative;
+			&:hover > .page-topbar__menu__dropdown__sub {
+				display: block;
+			}
+			&__link {
+				color: $copy-color;
+				&:hover {
+					color: inherit;
+				}
+				i {
+					font-size: 14px;
+					position: relative;
+					top: -2px;
+					left: 2px;
+					color: $copy-color-light;
+				}
+			}
+		}
+		//dropdown menu
+		&__dropdown {
+			list-style:none;
+			position:relative;
+			margin:0;
+			padding:0;
+			text-align: left; 
+			&__sub {
+				display: none;
+				position: absolute;
+				top: 80%;
+				left: -24px;
+				background: $white;
+				border: 1px solid $border-color-dark;
+				padding: 10px 34px 10px 24px;
+				z-index: 10;
+				white-space: nowrap;
+				@include transition(all 0.15s ease-in-out);
+				&__item {
+					float: none;
+					line-height: 2.2;
+					&__link {
+						@include font-light;
+						color: $copy-color-light;
+						&:hover {
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
 	}
+
+	//page title
 	&__title {
 		display: inline-block;
 	}
+
+	//search bar
 	&__search {
 		display: inline-block;
 		float: right;
 		padding-right: $height;
+		&__input {
+
+		}
+		&__submit {
+			visibility: hidden;
+			position: absolute;
+		}
 	}
+
+	//back nav
 	&__back {
 		display: inline-block;
 		float: left;

@@ -10,15 +10,16 @@
 
 
 //fontAwesome
-@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+//@import "../../bower_components/fontawesome/scss/font-awesome.scss";
 
 
 @import "reset"; // based on HTML5Reset
 @import "variables"; // my vars goes here
 @import "general"; // general, common styles goes here
-
+@import "common-header";
 
 
 @import "page-topbar";
+// @import "search-box";
 @import "marketplace-hero-carousel";
 @import "marketplace-library";

@@ -4,18 +4,38 @@
 	clear: both;
 	text-align: center;
 	line-height: 0;
-	overflow: hidden;
 	position: relative;
+	&__wrapper {
+		width: 1440px;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -720px;
+	}
 	&__item  {
 		display: inline-block;
 		border: 1px solid #CECECE;
 		margin: 28px 5px 0;
+		position: relative;
+		z-index: 0;
+		&:hover {
+			@include opacity(0.85);
+			@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
+		}
+	}
+	&__arrow {
+		font-size: 0;
+		color: transparent;
 	}
 }
 
-.marketplace-hero-carousel__arrow:hover:before {
-	@include opacity(0.3);
+
+.marketplace-hero-carousel__arrow__triger:hover .marketplace-hero-carousel__arrow:before {
+	@include opacity(0.3);	
 }
+.marketplace-hero-carousel__arrow__triger:hover .marketplace-hero-carousel__arrow:after {
+	@include opacity(0.8);		
+}
+
 .marketplace-hero-carousel__arrow:before {
 	$dimensions: 40px;
 	content: "";
@@ -27,7 +47,10 @@
 	border-radius: 50%;
 	top: 50%;
 	margin-top: -$dimensions / 2;
-	@include opacity(0.2);
+	@include opacity(0);
+	z-index: 1;
+	@include transition-duration(0.15s);
+  	@include transition-timing-function(ease-in);
 }
 .marketplace-hero-carousel__arrow:after {
 	$dimensions: 14px;
@@ -39,8 +62,13 @@
 	top: 50%;
 	margin-top: -$dimensions / 2;
 	@include rotate(45deg);
+	z-index: 2;
+	@include opacity(0);
 }
-
+.marketplace-hero-carousel__arrow--left,
+.marketplace-hero-carousel__arrow--right {
+	@extend .marketplace-hero-carousel__arrow;
+}
 .marketplace-hero-carousel__arrow--left:before {
 	@extend .marketplace-hero-carousel__arrow:before;
 	left: 22px;

@@ -55,7 +55,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     </head>
 
 
@@ -67,25 +68,33 @@
         <div class="wrapper__fixed-width">
             <nav class="page-topbar">
                 <div class="page-topbar__menu">
-                    <ul>
-                        <li class="page-topbar__menu__root">All Categories
-                            <!--
-                            <ul>
-                                <li>All Categories</li>
-                                <li>Marketing</li>
-                                <li>Commerce</li>
-                                <li>Other</li>
+                    <ul class="page-topbar__menu__dropdown">
+                        <li class="page-topbar__menu__item"><a href="#" class="page-topbar__menu__item__link">All Categories <i class="fa fa-sort-desc"></i></a>
+                            <ul class="page-topbar__menu__dropdown__sub">
+                                <li class="page-topbar__menu__dropdown__sub__item"><a class="page-topbar__menu__dropdown__sub__item__link" href="#">All Categories</a></li>
+                                <li class="page-topbar__menu__dropdown__sub__item"><a class="page-topbar__menu__dropdown__sub__item__link" href="#">Marketing</a></li>
+                                <li class="page-topbar__menu__dropdown__sub__item"><a class="page-topbar__menu__dropdown__sub__item__link" href="#">Commerce</a></li>
+                                <li class="page-topbar__menu__dropdown__sub__item"><a class="page-topbar__menu__dropdown__sub__item__link" href="#">Other</a></li>
                             </ul>
-                            -->
                         </li>
                     </ul>
                 </div>    
                 <h1 class="page-topbar__title">Apps</h1>   
-                <div class="page-topbar__search">
+
+                <div id="sb-search" class="sb-search page-topbar__search">
                     <form>
+                        <i class="fa fa-search"></i>
+                        <input class="sb-search-input page-topbar__search__input" placeholder="" type="text" value="" name="search" id="search">
+                        <input class="sb-search-submit page-topbar__search__submit" type="submit" value="">
+                    </form>
+                </div>
+
+ <!--                <div class="page-topbar__search">
+                    <form>
+                        <i class="fa fa-search"></i>
                         <input type="text" class="page-topbar__search__input">
                     </form>
-                </div>  
+                </div> -->
             </nav>
         </div>
     </div>
@@ -93,27 +102,27 @@
 
 
 <!-- *carousel -->
-    <div class="wrapper__full-width">
+    <div class="wrapper__full-width marketplace-hero-carousel__arrow__triger">
         <div class="wrapper__fixed-width">
             <div class="marketplace-hero-carousel">
-                <i class="marketplace-hero-carousel__arrow--left"></i>
-                <i class="marketplace-hero-carousel__arrow--right"></i>
-                <ul>
+                <a href="#" class="marketplace-hero-carousel__arrow--left">Previous Slide</a>
+                <a href="#" class="marketplace-hero-carousel__arrow--right">Next Slide</a>
+                <ul class="marketplace-hero-carousel__wrapper">
                     <li class="marketplace-hero-carousel__item">
                         <a href="#">
-                            <img src="images/marketplace/featured-samples/featured-app-evernote.jpg" data-src2x="images/marketplace/featured-samples/featured-app-evernote-2x.jpg" width="460" height="284">
+                            <img src="images/featured-app-evernote.jpg" data-src2x="images/featured-app-evernote-2x.jpg" width="460" height="284">
                         </a>
                     </li>
 
                     <li class="marketplace-hero-carousel__item">
                         <a href="app.html">
-                            <img src="images/marketplace/featured-samples/featured-app-mailchimp.jpg" data-src2x="images/marketplace/featured-samples/featured-app-mailchimp-2x.jpg" width="460" height="284">
+                            <img src="images/featured-app-mailchimp.jpg" data-src2x="images/featured-app-mailchimp-2x.jpg" width="460" height="284">
                         </a>
                     </li>
 
                     <li class="marketplace-hero-carousel__item">
                         <a href="#  ">
-                            <img src="images/marketplace/featured-samples/featured-app-amazon.jpg" data-src2x="images/marketplace/featured-samples/featured-app-amazon-2x.jpg" width="460" height="284">
+                            <img src="images/featured-app-amazon.jpg" data-src2x="images/featured-app-amazon-2x.jpg" width="460" height="284">
                         </a>
                     </li>
                 </ul>
@@ -130,75 +139,75 @@
         <div class="marketplace-library">
             <div class="header__wrapper">
                 <h2 class="header__sub">Marketing</h2>
-                <a href="#" class="header__action--right">View All</a>
+                <a href="#" class="header__action--right">View All <i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="marketplace-library__items__wrapper">
                 <a href="app.html" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/MailChimp.png" class="marketplace-library__item__image">
+                    <img src="images/MailChimp.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Mailchimp</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-half-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Let your visitors signup for newsletters from your</p>
                     <p class="marketplace-library__item__action">Free Trial</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Evernote.png" class="marketplace-library__item__image">
+                    <img src="images/Evernote.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Evernote Reminder</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Write, collect, find &amp; and more present your notes!</p>
                     <p class="marketplace-library__item__action">Free Trial</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Instagram.png" class="marketplace-library__item__image">
+                    <img src="images/Instagram.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Instagram Feed</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Share your instagram feed with your visitors.</p>
                     <p class="marketplace-library__item__action">Free</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Twitter.png" class="marketplace-library__item__image">
+                    <img src="images/Twitter.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Twitter Feed</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Show recent tweets and follow recent...</p>
                     <p class="marketplace-library__item__action">Free</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Amazon.png" class="marketplace-library__item__image">
+                    <img src="images/Amazon.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Amazon Shop Cart</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Embed your amazon storefront right on we...</p>
                     <p class="marketplace-library__item__action">Free</p>
@@ -211,75 +220,75 @@
         <div class="marketplace-library">
              <div class="header__wrapper">
                 <h2 class="header__sub">Store</h2>
-                <a href="#" class="header__action--right">View All</a>
+                <a href="#" class="header__action--right">View All <i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="marketplace-library__items__wrapper">
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Etsy.png" class="marketplace-library__item__image">
+                    <img src="images/Etsy.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Etsy Shop</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Listen to great music with your visitors...</p>
                     <p class="marketplace-library__item__action">$19/mo</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Facebook.png" class="marketplace-library__item__image">
+                    <img src="images/Facebook.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Facebook Posts</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
-                        <i class="fa-star-o"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Share your feed with the world, one post...</p>
                     <p class="marketplace-library__item__action">Free</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Dribbble.png" class="marketplace-library__item__image">
+                    <img src="images/Dribbble.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Dribble Posts</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Share your feed with the world, one post...</p>
                     <p class="marketplace-library__item__action">Free</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Yelp.png" class="marketplace-library__item__image">
+                    <img src="images/Yelp.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Yelp Reviews</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Share your feed with the world, one post...</p>
                     <p class="marketplace-library__item__action">Free</p>
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Dropbox.png" class="marketplace-library__item__image">
+                    <img src="images/Dropbox.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Dropbox Files</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Share your feed with the world, one post...</p>
                     <p class="marketplace-library__item__action">Free</p>
@@ -291,19 +300,19 @@
         <div class="marketplace-library">
              <div class="header__wrapper">
                 <h2 class="header__sub">Elements</h2>
-                <a href="#" class="header__action--right">View All</a>
+                <a href="#" class="header__action--right">View All <i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="marketplace-library__items__wrapper">
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/marketplace/sample-apps/Beats-Music.png" class="marketplace-library__item__image">
+                    <img src="images/Beats-Music.png" class="marketplace-library__item__image">
                     <h3 class="marketplace-library__item__header">Beats Mucis</h3>
                     <div class="marketplace-library__item__rating">
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star"></i>
-                        <i class="fa-star-o"></i>
-                        <i class="fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <p class="marketplace-library__item__discription">Listen to great music with your visitors...</p>
                     <p class="marketplace-library__item__action">Install</p>
