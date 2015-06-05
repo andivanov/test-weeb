@@ -9,6 +9,7 @@
 			position: relative;
 		}
 		&__item {
+			background: $white;
 			img {
 				display: block;
 				margin: 0 auto;
@@ -39,8 +40,6 @@
 			}
 		}
 	}
-
-
 
 
 
@@ -108,17 +107,20 @@
 
 @media screen and (min-width: 1024px){
 	.app-hero-block {
-		padding: 0;
+		padding: 40px 0 60px;
 		&__slideshow {			
-			width: 660px;
-			height: auto;
-			margin: 40px 20px 70px 0;
+			width: 705px;
+			display: inline-block;
+			margin-right: 20px;
+		
 		}	
 		&__details {
+			width: 297px;
 			display: inline-block;
-			margin-top: 0;
-			margin: 0 auto;
 			float: right;
+			margin: 0;
+			padding: 36px 36px 0 36px;
+			height: 436px;
 		}
 	}
 }
@@ -126,12 +128,15 @@
 
 @media screen and (min-width: 1440px){
 	.app-hero-block {
-		&__slideshow {	
-			width: 716px;		
-
+		&__slideshow {			
+			width: 716px;
+			margin-right: 40px;
+		
 		}	
 		&__details {
-			margin-right: 340px;
+			width: 344px;
+			padding: 40px 40px 0 40px;
+			height: 442px;
 		}
 	}
 }

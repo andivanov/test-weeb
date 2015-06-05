@@ -10,6 +10,7 @@
 	&__menu {
 		display: inline-block;
 		margin: 0 20px;
+
 		//top nav
 		&__item {
 			position:relative;
@@ -30,6 +31,7 @@
 				}
 			}
 		}
+
 		//dropdown menu
 		&__dropdown {
 			list-style:none;
@@ -62,23 +64,14 @@
 				}
 			}
 		}
-	}
+	} //menu ends
+
+
 
 	//page title
 	&__title {
 		display: inline-block;
 		margin: 0 20px;
-	}
-
-	//search bar
-	&__search {
-		display: block;
-		&__input {
-		}
-		&__submit {
-			visibility: hidden;
-			position: absolute;
-		}
 	}
 
 	//back nav
@@ -109,10 +102,6 @@
 		}
 		&__title {
 			margin: 0;
-		}
-		&__search {
-			padding-right: $height;
-			float: right;
 		}
 		&__back {
 			padding-left: $height;

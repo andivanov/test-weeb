@@ -51,6 +51,7 @@
 
     <script src="//use.typekit.net/ygr6jdr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="scripts/modernizr.custom.js"></script>
     
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -67,6 +68,7 @@
     <div class="wrapper__full-width">
         <div class="wrapper__fixed-width">
             <nav class="page-topbar">
+
                 <div class="page-topbar__menu">
                     <ul class="page-topbar__menu__dropdown">
                         <li class="page-topbar__menu__item"><a href="#" class="page-topbar__menu__item__link">All Categories <i class="fa fa-sort-desc"></i></a>
@@ -78,16 +80,20 @@
                             </ul>
                         </li>
                     </ul>
-                </div>    
+                </div>
+
                 <h1 class="page-topbar__title">Apps</h1>   
 
-                <div id="sb-search" class="sb-search page-topbar__search">
-                    <form>
-                        <i class="fa fa-search"></i>
-                        <input class="sb-search-input page-topbar__search__input" placeholder="" type="text" value="" name="search" id="search">
-                        <input class="sb-search-submit page-topbar__search__submit" type="submit" value="">
-                    </form>
+                <div class="page-topbar__search__wrapper">
+                    <div id="page-topbar__search" class="page-topbar__search">
+                        <form>
+                            <i class="fa fa-search page-topbar__search__icon"></i>
+                            <input class="page-topbar__search__input" placeholder="What are you searching for?" type="text" value="" name="search" id="search">
+                            <input class="page-topbar__search__submit" type="submit" value="">
+                        </form>
+                    </div>
                 </div>
+
 
  <!--                <div class="page-topbar__search">
                     <form>
@@ -327,8 +333,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+ 
     <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script>
+        new UISearch( document.getElementById( 'page-topbar__search' ) );
+    </script>
 </body>
 </html>

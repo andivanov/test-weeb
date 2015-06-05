@@ -4,6 +4,8 @@
 	vertical-align: top;
 	&__item {
 		width: 200px;
+		height: 280px;
+		vertical-align: top;
 		display: block;
 		border: 1px solid #D4D5D6;
 		margin: 0 auto 20px;
@@ -20,6 +22,10 @@
 		}
 		&__header {
 			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		&__rating {
+			margin-bottom: 10px;
 		}
 		&__discription {
 			color: #666c70;
