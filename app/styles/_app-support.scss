@@ -1,0 +1,43 @@
+.app-support {
+	padding: 0 40px;
+	display: block;
+	margin: 0 0 40px 0;
+	vertical-align: top;
+	&__contact {
+		&__type {
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 16px;
+		}
+		&__info {
+			display: inline-block;
+			width: 60%;
+			margin-bottom: 16px;
+		}
+	}	
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (min-width: 1024px){
+	.app-support {
+		padding: 0;
+		width: 300px;
+		display: inline-block;
+		margin: 0 0 40px 40px;
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.app-support {
+		width: 440px;
+	}	
+}

@@ -1,0 +1,74 @@
+.app-review {
+	padding: 0 40px;
+	display: block;
+	vertical-align: top;
+
+	//app total rating
+	&__rating__total {
+		margin: 0 0 50px 0;
+		i {
+			font-size: 18px;
+		}
+		&__number {
+			color: $copy-color-light;
+			margin-left: 16px;
+		}
+	}
+
+	//user reivews 
+	&__user {
+		$vertical-rythm: 	10px;
+		&__blockquote {
+			@include font-semibold;
+			margin-bottom: $vertical-rythm;
+		}
+
+		&__rating {
+			display: inline-block;
+		}
+		&__name {
+			display: inline-block;
+			margin: 0 10px $vertical-rythm;
+		}	
+		&__reviewDate {
+			display: inline-block;
+			margin-bottom: $vertical-rythm;
+			color: $copy-color-light;
+			&:before {
+				content: "-";
+			}
+		}
+		&__review {
+			margin-bottom: $vertical-rythm * 3;
+		}
+	}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (min-width: 1024px){
+	.app-review {
+		padding: 0;
+		width: 660px;
+		display: inline-block;
+		margin-bottom: 40px;
+		border-top: 1px solid $border-color;
+		float: left;
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.app-review {
+		width: 714px;
+	}
+}

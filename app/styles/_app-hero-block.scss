@@ -1,0 +1,137 @@
+.app-hero-block {
+	&__slideshow {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: 1px solid $border-color;
+		line-height: 0;
+		&__wrapper {
+			position: relative;
+		}
+		&__item {
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			&__link {
+				font-size: 0;
+				color: transparent;
+				position: relative;
+				display: block;
+				&:before {
+					$dimensions: 10px;
+					content: '';
+					position: absolute;
+					display: block;
+					width: $dimensions;
+					height: $dimensions;
+					background: $border-color-dark;
+					border: 2px solid $border-color-dark;
+					@include border-radius(50%);
+					left: 50%;
+					top: 20px;
+					margin-left: -$dimensions / 2;
+				}
+				&--active {
+					@extend .app-hero-block__slideshow__item__link;
+					background: $white;
+				}
+			}
+		}
+	}
+
+
+
+
+
+	&__details {
+		background: $white;
+		display: block;
+		width: 340px;
+		border: 1px solid $border-color;
+		padding: 40px 40px 0 40px;
+		margin: 40px auto;
+		vertical-align: top;
+		height: 442px;
+		
+		//app name
+		&__name {
+			font-size: 28px;
+			@include font-normal;
+			margin-top: 20px;
+			margin-bottom: 6px;
+		}
+
+		//stars with # of reviews
+		&__rating {
+			margin-bottom: 26px;
+			&__total {
+				font-size: 14px;
+				color: $copy-color-light;
+			}
+		}
+
+		//button
+		&__action {
+			display: inline-block;
+			width: 174px;
+			text-align: center;
+			padding: 10px 0;
+			border: 2px solid $border-color;
+			@include border-radius(50px);
+			color: $copy-color;
+			margin-bottom: 40px;
+		}
+
+		//additional details
+		&__info {
+			line-height: 34px;
+			&__item {
+				border-bottom: 1px solid $border-color;
+				&:last-child {
+					border-bottom: none;
+				}
+			}	
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: 768px){
+	.app-hero-block {
+		padding: 0;
+	}
+}
+
+
+@media screen and (min-width: 1024px){
+	.app-hero-block {
+		padding: 0;
+		&__slideshow {			
+			width: 660px;
+			height: auto;
+			margin: 40px 20px 70px 0;
+		}	
+		&__details {
+			display: inline-block;
+			margin-top: 0;
+			margin: 0 auto;
+			float: right;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.app-hero-block {
+		&__slideshow {	
+			width: 716px;		
+
+		}	
+		&__details {
+			margin-right: 340px;
+		}
+	}
+}

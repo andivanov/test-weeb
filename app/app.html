@@ -66,7 +66,7 @@
     <div class="wrapper__full-width">  
         <div class="wrapper__fixed-width">
             <nav class="page-topbar">
-                <a href="index.html" class="page-topbar__back">All Apps</a>   
+                <a href="index.html" class="page-topbar__back"><i class="fa fa-angle-left"></i> All Apps</a>   
                 <h1 class="page-topbar__title">Mailchimp</h1>    
             </nav>
         </div>
@@ -75,103 +75,116 @@
 
 <!-- *hero -->
     <div class="wrapper__fixed-width">
-        <div class="app-heroUnit">
-            <div class="app-heroUnit__slideshow">
-                <ul>
-                    <li><img src="images/featured-app-evernote.jpg"></li>
-                    <!--
-                    <li><img src="images/featured-app-mailchimp.jpg"></li>
-                    <li><img src="images/featured-app-amazon.jpg"></li>
-                    -->
-                </ul>
-            </div> <!-- .app-hero-unit__slideshow -->
+        <div class="app-hero-block">
 
-            <div class="app-heroUnit__details">
-                <img class="app-heroUnit__details__image" src="images/MailChimp.png" width="120" height="84">
-                <h2 class="app-heroUnit__details__name">MailChimp</h2>
-                <div class="app-heroUnit__details__rating">
+            <div class="app-hero-block__details">
+                <img class="app-hero-block__details__image" src="images/MailChimp.png" width="120" height="84">
+                <h2 class="app-hero-block__details__name">MailChimp</h2>
+                <div class="app-hero-block__details__rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
-                    <span class="app-heroUnit__details__rating__total">(132)</span>
+                    <span class="app-hero-block__details__rating__total">(132)</span>
                 </div>
-                <a href="#" class="app-heroUnit__details__actions">Add</a>
-                <ul class="app-heroUnit__details__info">
-                    <li class="app-heroUnit__details__info-item">$19/mo</li>
-                    <li class="app-heroUnit__details__info-item">14 day free trial</li>
-                    <li class="app-heroUnit__details__info-item"><a href="#">mailchimp.com</a></li>
+                <a href="#" class="app-hero-block__details__action">Complete</a>
+                <ul class="app-hero-block__details__info">
+                    <li class="app-hero-block__details__info__item">$19/mo</li>
+                    <li class="app-hero-block__details__info__item">14 day free trial</li>
+                    <li class="app-hero-block__details__info__item"><a href="#">mailchimp.com</a></li>
                 </ul>
-            </div> <!-- .app-heroUnit__details -->
-        </div> <!-- app-heroUnit -->
+            </div> <!-- .app-hero-block__details -->
+
+            <div class="app-hero-block__slideshow">
+                <ul class="app-hero-block__slideshow__wrapper">
+                    <li class="app-hero-block__slideshow__item">
+                        <img src="images/app-hero-block-1.jpg" data-src2x="images/featured-app-evernote-2x.jpg">
+                        <a href="#" class="app-hero-block__slideshow__item__link--active">Image</a>
+                    </li>
+                </ul>
+            </div> <!-- .app-hero-unit__slideshow -->
+            
+        </div> <!-- app-hero-block -->
+    </div>
+
 
 <!-- *description -->
-        <div class="app-description">
-            <h3 class="app-description__header header__sub">About</h3>
-            <p>We make it easy to send email newsletters to your customers, manage your subscriber lists, and track campaign performance.</p>
-            <p>Mailchimp helps you design email newsletters, share them on social networks, integrate with services</p>
-            <p>You already use, and track your results.  It's like your own personal publishing platform.  Track campaign performance, and sync your email marketing with social networks like twitter, facebook, and linkedin.</p>
-            <a href="#">More</a>
-        </div>        
-
-
-<!-- *reivews -->
-        <div class="app-review">
-            <h3 class="app-review__header header__sub">Reviews</h3>
-            <div class="app-review__rating__total">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <span class="app-review__rating__total__number">(132)</span>
-            </div>
-
-            <div class="app-review__user">
-                <blockquote class="app-review__user__header">This app is next level... enough said.</blockquote> 
-                <div class="app-review__user__rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+    <div class="wrapper__full-width">  
+        <div class="wrapper__fixed-width">  
+            <div class="app-description">
+                <div class="header__wrapper">
+                    <h3 class="app-description__header header__sub--semibold">About</h3>
                 </div>
-                <p class="app-review__user__name">Dan Muscles</p>
-                <p class="app-review__user__reviewDate">Feb 14, 2015</p>
-                <p class="app-review__user__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur dui eu lacus tristique, quis sodales arcu eleifend. Quisque at ipsum eu purus tempor varius.</p>
-            </div>
+                <p>We make it easy to send email newsletters to your customers, manage your subscriber lists, and track campaign performance.</p>
+                <p>Mailchimp helps you design email newsletters, share them on social networks, integrate with services</p>
+                <p>You already use, and track your results.  It's like your own personal publishing platform.  Track campaign performance, and sync your email marketing with social networks like twitter, facebook, and linkedin.</p>
+                <a href="#">More</a>
+            </div>        
 
-            <div class="app-review__user">
-                <blockquote class="app-review__user__header">First off, this app is so dope.</blockquote> 
-                <div class="app-review__user__rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+    <!-- *reivews -->
+            <div class="app-review">
+                <div class="header__wrapper">
+                    <h3 class="app-review__header header__sub--semibold">Reviews</h3>
                 </div>
-                <p class="app-review__user__name">Bryan Ashley</p>
-                <p class="app-review__user__reviewDate">Feb 12, 2015</p>
-                <p class="app-review__user__review">Vestibulum non consectetur eros, in dictum enim. Pellentesque tempus euismod fringilla. Quisque at ipsum eu purus tempor varius. Sed efficitur ipsum et purus ultrices, ac ultrices leo cursus. <a href="#" class="app-review__user__review__read-full-article">More</a></p>
-            </div>
-        </div> <!-- .app-review -->
+                <div class="app-review__rating__total">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <span class="app-review__rating__total__number">132 Reviews</span>
+                </div>
 
-        <div class="app-support">
-            <h3 class="app-support__header header__sub">Support</h3>
-            <dl>
-                <dt>Email</dt>
-                <dd><a href="mailto:#">help@mailchimp.com</a></dd>
-                <dt>Help</dt>
-                <dd><a href="mailto:#">kb@mailchimp.com</a></dd>
-                <dt>Phone</dt>
-                <dd>1-800-245-3333</dd>
-                <dt>Developer</dt>
-                <dd><a href="#">The Rocket Science G...</a></dd>
-            </dl>
-        </div>  
+                <div class="app-review__user">
+                    <blockquote class="app-review__user__blockquote">This app is next level... enough said.</blockquote> 
+                    <div class="app-review__user__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="app-review__user__name">Dan Muscles</a>
+                    <p class="app-review__user__reviewDate">Feb 14, 2015</p>
+                    <p class="app-review__user__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur dui eu lacus tristique, quis sodales arcu eleifend. Quisque at ipsum eu purus tempor varius.</p>
+                </div>
 
-    </div><!-- .wrapper -->
+                <div class="app-review__user">
+                    <blockquote class="app-review__user__blockquote">First off, this app is so dope.</blockquote> 
+                    <div class="app-review__user__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="app-review__user__name">Bryan Ashley</a>
+                    <p class="app-review__user__reviewDate">Feb 12, 2015</p>
+                    <p class="app-review__user__review">Vestibulum non consectetur eros, in dictum enim. Pellentesque tempus euismod fringilla. Quisque at ipsum eu purus tempor varius. Sed efficitur ipsum et purus ultrices, ac ultrices leo cursus. </p>
+                    <a href="#" class="app-review__user__review__read-full-article">More</a>
+                </div>
+            </div> <!-- .app-review -->
+
+
+            <div class="app-support">
+                <div class="header__wrapper">
+                    <h3 class="app-support__header header__sub--semibold">Support</h3>
+                </div>
+                <dl class="app-support__contact">
+                    <dt class="app-support__contact__type">Email</dt>
+                    <dd class="app-support__contact__info"><a href="mailto:#">help@mailchimp.com</a></dd>
+                    <dt class="app-support__contact__type">Help</dt>
+                    <dd class="app-support__contact__info"><a href="mailto:#">kb@mailchimp.com</a></dd>
+                    <dt class="app-support__contact__type">Phone</dt>
+                    <dd class="app-support__contact__info">1-800-245-3333</dd>
+                    <dt class="app-support__contact__type">Developer</dt>
+                    <dd class="app-support__contact__info"><a href="#">The Rocket Science G...</a></dd>
+                </dl>
+            </div> 
+
+        </div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

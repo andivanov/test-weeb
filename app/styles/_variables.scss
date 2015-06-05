@@ -5,21 +5,21 @@
 // $rhythm-unit: "rem";
 
 
-$font-family: "proxima-nova", sans-serif;
+$font-family: 		"proxima-nova", sans-serif;
+$font-size: 		16px;
+$header-size: 		18px;
+
 @mixin font-light {
-	font-family: $font-family;
-	font-style: normal;
-	font-weight: 300;
+	font-style:  	normal;
+	font-weight: 	300;
 }
 @mixin font-normal {
-	font-family: $font-family;
-	font-style: normal;
-	font-weight: 400;
+	font-style: 	normal;
+	font-weight: 	400;
 }
 @mixin font-semibold {
-	font-family: $font-family;
-	font-style: normal;
-	font-weight: 600;
+	font-style: 	normal;
+	font-weight: 	600;
 }
 
 
@@ -30,7 +30,6 @@ $off-black: 		#363b3e;
 $white: 			#fff;
 $off-white: 		#f8f8f8;
 
-
 $copy-color: 		$off-black;
 $copy-color-light: 	#80868a;
 
@@ -39,4 +38,5 @@ $accent-color: 		#666;
 $links-color: 		#2990ea;
 $links-color-hover: #7BC4FD;
 
+$border-color: 		#D4D5D6;
 $border-color-dark: #A6A6A6;

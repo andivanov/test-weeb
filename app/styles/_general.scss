@@ -20,10 +20,13 @@ html {
   	box-sizing: inherit;
 }
 
+
+
 body {
   	background: $off-white;
   	font-family: $font-family;
   	color: $copy-color;
+  	font-size: $font-size;
 }
 
 a {
@@ -37,6 +40,10 @@ a {
 	}
 }
 
+p {
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
 
 .fa-star,
 .fa-star-o,
@@ -48,13 +55,16 @@ a {
 .wrapper__full-width {
 	overflow: hidden;
 }
-
-@media screen and (min-width: 768px){
-
+.wrapper__fixed-width {
+	position: relative;
 }
 
 
 
+
+@media screen and (min-width: 768px){
+
+}
 
 
 @media screen and (min-width: 1024px){

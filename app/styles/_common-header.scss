@@ -1,17 +1,29 @@
 .header {
+	$header-wrapper-height: 80px;
+	$header-content-top-margin: 40px;
+
+	// wraps header section
 	&__wrapper {
-		height: 80px;
-		font-size: 18px;
+		height: $header-wrapper-height;
 		color: $copy-color;
-		padding: 0 20px;
 	}
+
+	// subheader itself
 	&__sub {
-		margin-top: 40px;
+		font-size: $header-size;
+		margin-top: $header-content-top-margin;
 		display: inline-block;
 		@include font-light;
+		&--semibold {
+			@extend .header__sub;
+			@include font-semibold;
+		}
 	}
+
+	// links
 	&__action {
-		margin-top: 40px;
+		font-size: $header-size;
+		margin-top: $header-content-top-margin;
 		&--right {
 			@extend .header__action;
 			float: right;
@@ -30,16 +42,16 @@
 
 
 @media screen and (min-width: 768px){
-	.header {
-		&__wrapper {
-			padding: 0 60px;
-		}
-	}
+
 }
 
 
 @media screen and (min-width: 1024px){
-
+	// .header {
+	// 	&__wrapper {
+	// 		padding: 0 60px;
+	// 	}
+	// }
 }
 
 

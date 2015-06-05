@@ -1,0 +1,30 @@
+.app-description {
+	padding: 0 40px;
+	display: block;
+	vertical-align: top;
+}
+
+
+
+@media screen and (min-width: 768px){
+	
+}
+
+
+@media screen and (min-width: 1024px){
+	.app-description {
+		padding: 0;
+		width: 660px;
+		margin-right: 20px;
+		margin-bottom: 40px;
+		display: inline-block;
+		float: left;
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.app-description {
+		width: 714px;
+	}
+}

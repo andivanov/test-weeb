@@ -1,7 +1,4 @@
 .marketplace-library {
-	&__items__wrapper {
-		//text-align: center;
-	}
 	&__item {
 		width: 200px;
 		display: block;
@@ -18,12 +15,6 @@
 			border-color: $links-color-hover;
 			@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
 		}
-		// &:first-child {
-		// 	margin-left: 0;
-		// }
-		// &:last-child {
-		// 	margin-right: 0;
-		// }
 		&__header {
 			font-size: 16px;
 		}
