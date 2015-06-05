@@ -1,6 +1,6 @@
 .page-topbar {
 	$height: 60px;
-	height: $height - 2px;
+	//height: $height;
 	line-height: $height;
 	background: $white;
 	text-align: center;
@@ -9,8 +9,7 @@
 
 	&__menu {
 		display: inline-block;
-		float: left;
-		padding-left: $height;
+		margin: 0 20px;
 		//top nav
 		&__item {
 			position:relative;
@@ -68,15 +67,13 @@
 	//page title
 	&__title {
 		display: inline-block;
+		margin: 0 20px;
 	}
 
 	//search bar
 	&__search {
-		display: inline-block;
-		float: right;
-		padding-right: $height;
+		display: block;
 		&__input {
-
 		}
 		&__submit {
 			visibility: hidden;
@@ -87,8 +84,6 @@
 	//back nav
 	&__back {
 		display: inline-block;
-		float: left;
-		padding-left: $height;
 		i {
 			font-weight: 700;
 			font-size: 24px;
@@ -98,4 +93,40 @@
 			left: -2px;
 		}
 	}
+}
+
+
+
+
+@media screen and (min-width: 768px){
+	.page-topbar {
+		$height: 60px;
+		height: $height; 
+		&__menu {
+			padding-left: $height;
+			float: left;
+			margin: 0;
+		}
+		&__title {
+			margin: 0;
+		}
+		&__search {
+			padding-right: $height;
+			float: right;
+		}
+		&__back {
+			padding-left: $height;
+			float: left;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1024px){
+
+}
+
+
+@media screen and (min-width: 1440px){
+
 }

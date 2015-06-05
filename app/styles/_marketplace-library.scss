@@ -1,4 +1,7 @@
 .marketplace-library {
+	padding: 0 40px;
+	display: block;
+	vertical-align: top;
 	&__item {
 		width: 200px;
 		display: block;
@@ -31,6 +34,7 @@
 
 @media screen and (min-width: 768px) {
 	.marketplace-library {
+		padding: 0;
 		&__item {
 			display: inline-block;
 			margin: 0 10px 20px;
