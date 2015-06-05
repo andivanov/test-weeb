@@ -1,23 +1,22 @@
+//Work in progress file....
 
 
-
+/*
+To give element full width...
+	<div class="wrapper__full-width"></div>
+*/
 .wrapper__full-width {
-	overflow: hidden;
+	@extend .clearfix;
 }
 
-.wrapper__fixed-width {
-	position: relative;
-}
+
+.wrapper__fixed-width,
 .wrapper__fixed-width-a {
 	position: relative;
 }
 
 
-.width-two-thirds {
-	display: block;
-	padding: 0 40px;
-}
-
+.width-two-thirds,
 .width-one-third {
 	display: block;
 	padding: 0 40px;
@@ -30,12 +29,13 @@
 
 
 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: $M){
 
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $L){
 
 	.wrapper__full-width {
 		background: $white;
@@ -70,7 +70,8 @@
 }
 
 
-@media screen and (min-width: 1440px){
+
+@media screen and (min-width: $XL){
 	.wrapper__fixed-width {
 		width: 1440px;
 	}	

@@ -27,7 +27,9 @@ body {
   	font-family: $font-family;
   	color: $copy-color;
   	font-size: $font-size;
+  	overflow: hidden;
 }
+
 
 a {
 	color: $links-color;
@@ -56,6 +58,7 @@ p {
 
 
 
+
 .border-bottom-1 {
 	border-bottom: 1px solid $border-color;
 }
@@ -68,7 +71,7 @@ p {
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 	.fixed {
 		position: fixed;
 		z-index: 1000;
@@ -76,18 +79,18 @@ p {
 			@extend .fixed;
 			width: 100%;
 		}
-		+ div {
+		+ * {
 			padding-top: 60px;
 		}
 	}
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $L){
 			
 }
 
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: $XL){
 
 }

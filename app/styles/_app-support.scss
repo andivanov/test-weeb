@@ -1,4 +1,18 @@
+/* 
+	<div class="app-support">
+		<dl class="app-support__contact">
+			<dt class="app-support__contact__type">Email</dt>
+			<dd class="app-support__contact__info"><a href="mailto:#">help@mailchimp.com</a></dd>
+			<dt class="app-support__contact__type">Help</dt>
+			<dd class="app-support__contact__info"><a href="mailto:#">kb@mailchimp.com</a></dd>
+		</dl>
+	</div> <!-- app-support -->
+*/                
+
+
 .app-support {
+	$local-line-height: 16px;
+
 	display: block;
 	vertical-align: top;
 	border-top: 1px solid $border-color;
@@ -6,12 +20,12 @@
 		&__type {
 			display: inline-block;
 			width: 30%;
-			margin-bottom: 16px;
+			margin-bottom: $local-line-height;
 		}
 		&__info {
 			display: inline-block;
 			width: 60%;
-			margin-bottom: 16px;
+			margin-bottom: $local-line-height;
 		}
 	}	
 }
@@ -20,19 +34,18 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $L){
 	.app-support {
 		border: none;
 	}
 }
 
 
-@media screen and (min-width: 1440px){
-	.app-support {
-	}	
+@media screen and (min-width: $XL){
+
 }

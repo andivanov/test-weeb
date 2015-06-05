@@ -1,3 +1,25 @@
+/*
+	<div class="marketplace-library">
+		<div class="marketplace-library__items__wrapper">
+			<a href="#" class="marketplace-library__item">
+                <img src="" class="marketplace-library__item__image" alt="">
+                <h3 class="marketplace-library__item__header">Header</h3>
+                <div class="marketplace-library__item__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p class="marketplace-library__item__discription">Let your visitors signup for newsletters from your</p>
+                <p class="marketplace-library__item__action">Free Trial</p>
+            </a>
+        </div>
+    </div>
+*/
+
+
+
 .marketplace-library {
 	padding: 0 40px;
 	display: block;
@@ -7,30 +29,30 @@
 		max-height: 260px;
 		vertical-align: top;
 		display: block;
-		border: 1px solid #D4D5D6;
+		border: 1px solid $border-color;
 		margin: 0 auto 20px;
 		padding: 16px;
 		color: $copy-color;
 		background: $white;
 		text-align: left;
-		@include transition-duration(0.15s);
   		@include transition(all 0.15s ease-in-out);
 		&:hover {
 			color: inherit;
 			border-color: $links-color-hover;
-			@include transform (scale(1.01));
-			@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
+			@include transform (scale(1.005) rotate(0.1deg));
+			//@include single-box-shadow (0, 0, 14px, -4px, rgba(0, 0, 0, 0.085));
+			@include box-shadow (0 0 14px rgba(0, 0, 0, 0.085));
 		}
 		&__header {
-			font-size: 16px;
+			font-size: $font-size;
 			margin-bottom: 8px;
 		}
 		&__rating {
 			margin-bottom: 8px;
 		}
 		&__discription {
-			color: #666c70;
-			font-size: 14px;
+			color: $accent-color;
+			font-size: $font-sizeSM;
 			margin-bottom: 8px;
 		}
 		&__action {
@@ -40,9 +62,8 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $M) {
 	.marketplace-library {
-		padding: 0;
 		&__item {
 			display: inline-block;
 			margin: 0 10px 20px;
@@ -51,10 +72,19 @@
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $L){
+	.marketplace-library {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 40px;
+	}		
+}
+
+
+@media screen and (min-width: $XL){
 	.marketplace-library {
 		width: 1100px;
-		margin: 0 auto;
+		padding: 0;
 		&__item {
 			&:first-child {
 		 		margin-left: 0;
@@ -63,10 +93,5 @@
 		 		margin-right: 0;
 		 	}
 		}
-	}		
-}
-
-
-@media screen and (min-width: 1440px){
-	
+	}
 }

@@ -1,8 +1,13 @@
+
+
+
+
+
 //search bar
 .page-topbar__search__wrapper {
-	width: 310px;
-	display: inline-block;
-	float: right;
+	width: 80%;
+	display: block;
+	margin-left: 10%;
 }
 
 .page-topbar__search {
@@ -110,22 +115,28 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 	.page-topbar {
 		$height: 60px;
 		&__search {
 			padding-right: $height;
 			float: right;
+			&__wrapper {
+				width: 310px;
+				display: inline-block;
+				float: right;
+				margin-left: 0;
+			}
 		}
 	}
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $L){
 
 }
 
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: $XL){
 
 }

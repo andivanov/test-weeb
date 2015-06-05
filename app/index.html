@@ -142,7 +142,7 @@
 
             <div class="marketplace-library__items__wrapper">
                 <a href="app.html" class="marketplace-library__item">
-                    <img src="images/MailChimp.png" class="marketplace-library__item__image" alt="marketplace app MailChimp">
+                    <img src="images/MailChimp.png" class="marketplace-library__item__image lazy lazy" alt="marketplace app MailChimp">
                     <h3 class="marketplace-library__item__header">Mailchimp</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -156,7 +156,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Evernote.png" class="marketplace-library__item__image" alt="marketplace app Evernote">
+                    <img src="images/Evernote.png" class="marketplace-library__item__image lazy" alt="marketplace app Evernote">
                     <h3 class="marketplace-library__item__header">Evernote Reminder</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -170,7 +170,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Instagram.png" class="marketplace-library__item__image" alt="marketplace app Instagram">
+                    <img src="images/Instagram.png" class="marketplace-library__item__image lazy" alt="marketplace app Instagram">
                     <h3 class="marketplace-library__item__header">Instagram Feed</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -184,7 +184,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Twitter.png" class="marketplace-library__item__image" alt="marketplace app Twitter">
+                    <img src="images/Twitter.png" class="marketplace-library__item__image lazy" alt="marketplace app Twitter">
                     <h3 class="marketplace-library__item__header">Twitter Feed</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -198,7 +198,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Amazon.png" class="marketplace-library__item__image" alt="marketplace app Amazon">
+                    <img src="images/Amazon.png" class="marketplace-library__item__image lazy" alt="marketplace app Amazon">
                     <h3 class="marketplace-library__item__header">Amazon Shop Cart</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -223,7 +223,7 @@
 
             <div class="marketplace-library__items__wrapper">
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Etsy.png" class="marketplace-library__item__image" alt="store app Etsy">
+                    <img src="images/Etsy.png" class="marketplace-library__item__image lazy" alt="store app Etsy">
                     <h3 class="marketplace-library__item__header">Etsy Shop</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -237,7 +237,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Facebook.png" class="marketplace-library__item__image" alt="store app Facebook">
+                    <img src="images/Facebook.png" class="marketplace-library__item__image lazy" alt="store app Facebook">
                     <h3 class="marketplace-library__item__header">Facebook Posts</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -251,7 +251,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Dribbble.png" class="marketplace-library__item__image" alt="store app Dribbble">
+                    <img src="images/Dribbble.png" class="marketplace-library__item__image lazy" alt="store app Dribbble">
                     <h3 class="marketplace-library__item__header">Dribble Posts</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -265,7 +265,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Yelp.png" class="marketplace-library__item__image" alt="store app Yelp">
+                    <img src="images/Yelp.png" class="marketplace-library__item__image lazy" alt="store app Yelp">
                     <h3 class="marketplace-library__item__header">Yelp Reviews</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -279,7 +279,7 @@
                 </a>
 
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Dropbox.png" class="marketplace-library__item__image" alt="store app Dropbox">
+                    <img src="images/Dropbox.png" class="marketplace-library__item__image lazy" alt="store app Dropbox">
                     <h3 class="marketplace-library__item__header">Dropbox Files</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -303,7 +303,7 @@
 
             <div class="marketplace-library__items__wrapper">
                 <a href="#" class="marketplace-library__item">
-                    <img src="images/Beats-Music.png" class="marketplace-library__item__image" alt="elements app Beats Music">
+                    <img src="images/Beats-Music.png" class="marketplace-library__item__image lazy" alt="elements app Beats Music">
                     <h3 class="marketplace-library__item__header">Beats Mucis</h3>
                     <div class="marketplace-library__item__rating">
                         <i class="fa fa-star"></i>
@@ -322,6 +322,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery.lazyload/jquery.lazyload.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -331,6 +332,7 @@
     <!-- endbuild -->
     <script>
         new UISearch( document.getElementById( 'page-topbar__search' ) );
+        //$("img.lazy").lazyload();
     </script>
 </body>
 </html>

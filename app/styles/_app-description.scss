@@ -6,23 +6,16 @@
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 	
 }
 
 
-@media screen and (min-width: 1024px){
-	.app-description {
-		// width: 705px;
-		// display: inline-block;
-		// margin-right: 20px;
-	}
+@media screen and (min-width: $L){
+
 }
 
 
-@media screen and (min-width: 1440px){
-	.app-description {
-		// width: 716px;
-		// margin-right: 40px;
-	}
+@media screen and (min-width: $XL){
+
 }

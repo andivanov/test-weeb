@@ -1,28 +1,10 @@
+
+
 //Typography
-// $base-font-size: 16px;
-// $base-line-height: 24px;
-// @include establish-baseline;
-// $rhythm-unit: "rem";
-
-
 $font-family: 		"proxima-nova", sans-serif;
-
 $font-size: 		16px;
 $header-size: 		18px;
-
-@mixin font-light {
-	font-style:  	normal;
-	font-weight: 	300;
-}
-@mixin font-normal {
-	font-style: 	normal;
-	font-weight: 	400;
-}
-@mixin font-semibold {
-	font-style: 	normal;
-	font-weight: 	600;
-}
-
+$font-sizeSM: 		$font-size - 2px;
 
 
 
@@ -33,14 +15,19 @@ $white: 			#fff;
 $off-white: 		#f8f8f8;
 $happy-orange: 		#FF8F2E;
 
-
 $copy-color: 		$off-black;
 $copy-color-light: 	#80868a;
 
-$accent-color: 		#666;
+$accent-color: 		#666c70;
 
 $links-color: 		#2990ea;
 $links-color-hover: #7BC4FD;
 
 $border-color: 		#D4D5D6;
-$border-color-dark: #A6A6A6;
+$border-color-dark: #9BA0A3;
+
+
+//Media queries - break points
+$M: 				768px;
+$L:  				1024px;
+$XL: 				1440px;

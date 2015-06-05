@@ -5,9 +5,10 @@
 @import "reset";                // based on HTML5Reset
 
 
-@import "common-variables";     // my vars goes here
+@import "common-variables";     // vars goes here
+@import "common-mixins";     	// mixins goes here
 @import "common-general";       // general, common styles goes here
-@import "common-grid";       	// attemp to create a grid - time needed
+@import "common-grid";       	// attemp to create a grid - time needed =P
 @import "common-header";
 @import "common-page-topbar";   // top header
 @import "common-page-topbar-search-box"; //header search bar

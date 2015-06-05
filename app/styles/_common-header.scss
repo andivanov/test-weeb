@@ -1,3 +1,13 @@
+
+/*
+	<div class="header__wrapper">
+        <h2 class="header__sub">Header</h2>
+		<a href="#" class="header__action--right">Call to Action <i class="fa fa-angle-right"></i></a>
+		<a href="#" class="header__action--left">Call to Action <i class="fa fa-angle-left"></i></a>
+	</div>
+*/
+
+
 .header {
 	$header-wrapper-height: 80px;
 	$header-content-top-margin: 40px;
@@ -41,21 +51,17 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 
 }
 
 
-@media screen and (min-width: 1024px){
-	// .header {
-	// 	&__wrapper {
-	// 		padding: 0 60px;
-	// 	}
-	// }
+@media screen and (min-width: $L){
+
 }
 
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: $XL){
 	.header {
 		&__wrapper {
 			padding: 0;

@@ -1,3 +1,31 @@
+/*
+
+    <div class="app-review">
+        <div class="app-review__rating__total">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o""></i>
+            <i class="fa fa-star-o"></i>
+            <span class="app-review__rating__total__number"># of Reviews</span>
+        </div>
+
+        <div class="app-review__user">
+            <blockquote class="app-review__user__blockquote">This app is next level... enough said.</blockquote> 
+            <div class="app-review__user__rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <a href="#" class="app-review__user__name">Dan Muscles</a>
+            <p class="app-review__user__reviewDate">Feb 14, 2015</p>
+            <p class="app-review__user__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur dui eu lacus tristique, quis sodales arcu eleifend. Quisque at ipsum eu purus tempor varius.</p>
+        </div>
+    </div>
+*/                
+
 .app-review {
 	display: block;
 	vertical-align: top;
@@ -35,7 +63,7 @@
 			margin-bottom: $vertical-rythm;
 			color: $copy-color-light;
 			&:before {
-				content: "-";
+				content: " - ";
 			}
 		}
 		&__review {
@@ -50,20 +78,17 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $M){
 
 }
 
 
-@media screen and (min-width: 1024px){
-	.app-review {
-		
-		
-	}
+@media screen and (min-width: $L){
+
 }
 
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: $XL){
 	.app-review {
 		width: 716px;
 		margin-right: 40px;
