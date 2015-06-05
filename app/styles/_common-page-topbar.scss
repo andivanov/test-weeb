@@ -1,12 +1,14 @@
 .page-topbar {
-	
+
 	$height: 60px;
 	line-height: $height;
 	background: $white;
 	text-align: center;
 	font-size: $header-size;
-	height: 120px;
 	@include font-semibold;	
+	&.height-increased {
+		height: 120px;
+	}
 
 	&__menu {
 		display: inline-block;
@@ -112,7 +114,10 @@
 @media screen and (min-width: $M){
 	.page-topbar {
 		$height: 60px;
-		height: $height; 
+		height: $height;
+		&.height-increased {
+			height: $height;
+		}
 		&__menu {
 			padding-left: $height;
 			float: left;

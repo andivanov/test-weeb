@@ -50,7 +50,7 @@
 		display: block;
 		width: 340px;
 		border: 1px solid $border-color;
-		padding: 40px 40px 0 40px;
+		padding: 40px 0 0 40px;
 		margin: 40px auto;
 		vertical-align: top;
 		height: 442px;
@@ -80,10 +80,11 @@
 			padding: 10px 0;
 			border: 2px solid $border-color;
 			@include border-radius(50px);
+			@include font-semibold;
 			color: $copy-color;
 			margin-bottom: 40px;
 			&:hover {
-				border: 2px solid darken($border-color, 15%);
+				border: 2px solid darken($border-color, 20%);
 				color: darken($copy-color, 5%);
 			}
 		}
@@ -92,6 +93,7 @@
 		&__info {
 			line-height: 36px;
 			&__item {
+				@include font-semibold;
 				border-bottom: 1px solid $border-color;
 				&:last-child {
 					border-bottom: none;
@@ -129,7 +131,7 @@
 			display: inline-block;
 			float: right;
 			margin: 0;
-			padding: 36px 36px 0 36px;
+			padding: 36px 0 0 36px;
 			height: 436px;
 		}
 	}
@@ -145,7 +147,7 @@
 		}	
 		&__details {
 			width: 344px;
-			padding: 40px 40px 0 40px;
+			padding: 40px 0 0 40px;
 			height: 442px;
 		}
 	}
