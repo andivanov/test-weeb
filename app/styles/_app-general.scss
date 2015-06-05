@@ -1,0 +1,23 @@
+
+@import "app-hero-block";
+@import "app-description";
+@import "app-review";
+@import "app-support";
+
+
+@media screen and (min-width: 768px){
+	.app-top-header {
+		position: relative;
+		right: 65px;
+	}
+}
+
+
+@media screen and (min-width: 1024px){
+
+}
+
+
+@media screen and (min-width: 1440px){
+
+}

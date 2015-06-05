@@ -1,6 +1,7 @@
 .app-support {
 	display: block;
 	vertical-align: top;
+	border-top: 1px solid $border-color;
 	&__contact {
 		&__type {
 			display: inline-block;
@@ -26,19 +27,12 @@
 
 @media screen and (min-width: 1024px){
 	.app-support {
-		// width: 297px;
-		// display: inline-block;
-		// float: right;
-		// padding: 36px 36px 0 36px;
-		// height: 436px;
+		border: none;
 	}
 }
 
 
 @media screen and (min-width: 1440px){
 	.app-support {
-		// width: 344px;
-		// padding: 40px 40px 0 40px;
-		// height: 442px;
 	}	
 }

@@ -1,8 +1,8 @@
 .app-review {
-	padding: 0 40px;
 	display: block;
 	vertical-align: top;
-
+	margin-bottom: 40px;
+	border-top: 1px solid $border-color;
 	//app total rating
 	&__rating__total {
 		margin: 0 0 50px 0;
@@ -58,7 +58,7 @@
 @media screen and (min-width: 1024px){
 	.app-review {
 		
-		border-top: 1px solid $border-color;
+		
 	}
 }
 

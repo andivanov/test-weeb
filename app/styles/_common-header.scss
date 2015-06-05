@@ -13,7 +13,7 @@
 		font-size: $header-size;
 		margin-top: $header-content-top-margin;
 		display: inline-block;
-		@include font-light;
+		@include font-normal;
 		&--semibold {
 			@extend .header__sub;
 			@include font-semibold;
@@ -22,7 +22,7 @@
 
 	// links
 	&__action {
-		font-size: $header-size;
+		font-size: $font-size;
 		margin-top: $header-content-top-margin;
 		&--right {
 			@extend .header__action;

@@ -2,29 +2,20 @@
 // endbower
 
 @import "compass";
-
-//ggs - device width comes from variables file
-//@import "../../bower_components/spread-ggs/sass/spread-scss/variables";
-//@import "../../bower_components/spread-ggs/sass/spread-scss/global-elements";
-//@import "../../bower_components/spread-ggs/sass/spread-scss/column-calculator";
+@import "reset";                // based on HTML5Reset
 
 
-//fontAwesome
-//@import "../../bower_components/fontawesome/scss/font-awesome.scss";
-
-
-@import "reset"; // based on HTML5Reset
-@import "variables"; // my vars goes here
-@import "general"; // general, common styles goes here
+@import "common-variables";     // my vars goes here
+@import "common-general";       // general, common styles goes here
+@import "common-grid";       	// attemp to create a grid - time needed
 @import "common-header";
+@import "common-page-topbar";   // top header
+@import "common-page-topbar-search-box"; //header search bar
 
 
-@import "page-topbar";
-@import "search-box";
-@import "marketplace-hero-carousel";
-@import "marketplace-library";
+// landing page
+@import "marketplace-general";
 
-@import "app-hero-block";
-@import "app-description";
-@import "app-review";
-@import "app-support";
+
+// app page
+@import "app-general";

@@ -1,6 +1,5 @@
 .page-topbar {
 	$height: 60px;
-	//height: $height;
 	line-height: $height;
 	background: $white;
 	text-align: center;
@@ -80,10 +79,10 @@
 		i {
 			font-weight: 700;
 			font-size: 24px;
-			color: $copy-color-light;
 			position: relative;
 			top: 2px;
 			left: -2px;
+			//color: $copy-color-light;
 		}
 	}
 }

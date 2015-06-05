@@ -1,10 +1,8 @@
 .marketplace-hero-carousel {
 	background: $white;
 	height: 344px;
-	clear: both;
 	text-align: center;
 	line-height: 0;
-	position: relative;
 	&__wrapper {
 		width: 1440px;
 		position: absolute;
@@ -22,89 +20,4 @@
 			@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
 		}
 	}
-	&__arrow {
-		font-size: 0;
-		color: transparent;
-	}
-}
-
-
-.marketplace-hero-carousel__arrow__triger:hover .marketplace-hero-carousel__arrow:before {
-	@include opacity(0.3);	
-}
-.marketplace-hero-carousel__arrow__triger:hover .marketplace-hero-carousel__arrow:after {
-	@include opacity(0.8);		
-}
-
-.marketplace-hero-carousel__arrow:hover:before {
-	background: $black;
-	@include single-box-shadow (0, 0, 4px, 2px, rgba(31, 142, 237, 0.5));
-}
-.marketplace-hero-carousel__arrow:hover:after {
-	border-color: $white;
-}
-
-.marketplace-hero-carousel__arrow:before {
-	$dimensions: 40px;
-	content: "";
-	position: absolute;
-	background: $off-black;
-	display: block;
-	width: $dimensions;
-	height: $dimensions;
-	border-radius: 50%;
-	top: 50%;
-	margin-top: -$dimensions / 2;
-	@include opacity(0);
-	z-index: 1;
-	@include transition-duration(0.15s);
-  	@include transition-timing-function(ease-in);
-}
-.marketplace-hero-carousel__arrow:after {
-	$dimensions: 14px;
-	content: "";
-	position: absolute;
-	display: block;
-	width: $dimensions;
-	height: $dimensions;
-	top: 50%;
-	margin-top: -$dimensions / 2;
-	border-left: 3px solid $off-white;
-	border-bottom: 3px solid $off-white;
-	//@include rotate(45deg);
-	z-index: 2;
-	@include opacity(0);
-}
-
-.marketplace-hero-carousel__arrow--left,
-.marketplace-hero-carousel__arrow--right {
-	@extend .marketplace-hero-carousel__arrow;
-}
-
-.marketplace-hero-carousel__arrow--left:hover:before {
-	@extend .marketplace-hero-carousel__arrow:hover:before;
-}
-.marketplace-hero-carousel__arrow--left:before {
-	@extend .marketplace-hero-carousel__arrow:before;
-	left: 22px;
-}
-.marketplace-hero-carousel__arrow--left:after {
-	@extend .marketplace-hero-carousel__arrow:after;
-	left: 37px;
-	@include rotate(45deg);
-}
-
-
-.marketplace-hero-carousel__arrow--right:hover:before {
-	@extend .marketplace-hero-carousel__arrow:hover:before;
-}
-.marketplace-hero-carousel__arrow--right:before {
-	@extend .marketplace-hero-carousel__arrow:before;
-	right: 22px;
-}
-.marketplace-hero-carousel__arrow--right:after {
-	@extend .marketplace-hero-carousel__arrow:after;
-	right: 37px;
-	@include rotate(235deg);
-	
 }

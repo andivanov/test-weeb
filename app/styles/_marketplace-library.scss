@@ -4,32 +4,34 @@
 	vertical-align: top;
 	&__item {
 		width: 200px;
-		height: 280px;
+		max-height: 260px;
 		vertical-align: top;
 		display: block;
 		border: 1px solid #D4D5D6;
 		margin: 0 auto 20px;
-		padding: 20px;
+		padding: 16px;
 		color: $copy-color;
 		background: $white;
 		text-align: left;
 		@include transition-duration(0.15s);
-  		@include transition-timing-function(ease-in);
+  		@include transition(all 0.15s ease-in-out);
 		&:hover {
 			color: inherit;
 			border-color: $links-color-hover;
+			@include transform (scale(1.01));
 			@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
 		}
 		&__header {
 			font-size: 16px;
-			margin-bottom: 10px;
+			margin-bottom: 8px;
 		}
 		&__rating {
-			margin-bottom: 10px;
+			margin-bottom: 8px;
 		}
 		&__discription {
 			color: #666c70;
 			font-size: 14px;
+			margin-bottom: 8px;
 		}
 		&__action {
 			color: $links-color;	

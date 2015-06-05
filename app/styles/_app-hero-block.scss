@@ -1,9 +1,11 @@
 .app-hero-block {
+	margin-bottom: 40px;
 	&__slideshow {
 		display: block;
 		width: 100%;
 		height: auto;
-		border: 1px solid $border-color;
+		border-top: 1px solid $border-color;
+		border-bottom: 1px solid $border-color;
 		line-height: 0;
 		&__wrapper {
 			position: relative;
@@ -98,6 +100,8 @@
 
 
 
+
+
 @media screen and (min-width: 768px){
 	.app-hero-block {
 		padding: 0;
@@ -107,12 +111,14 @@
 
 @media screen and (min-width: 1024px){
 	.app-hero-block {
+		margin-bottom: 40px;
 		padding: 40px 0 60px;
 		&__slideshow {			
 			width: 705px;
 			display: inline-block;
 			margin-right: 20px;
-		
+			border-left: 1px solid $border-color;
+			border-right: 1px solid $border-color;
 		}	
 		&__details {
 			width: 297px;
