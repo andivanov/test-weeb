@@ -9,7 +9,7 @@
             </li>
         </ul>
     </div>
-    
+
 
 */
 
@@ -28,19 +28,52 @@
 		left: 50%;
 		margin: 0 0 0 -720px;
 	}
-	&__item  {
+	&__item {
 		display: inline-block;
-		border: 1px solid $border-color;
-		margin: 28px 5px 0;
+		margin: 28px 2.5px 0;
+		@include transition(all 0.2s ease-in-out);
+	}
+	&__item__link {
+		display: inline-block;
 		position: relative;
-		z-index: 0;
-		@include transition(all 0.15s ease-in-out);
+		z-index: 2;
+		margin: 0;
+    	padding: 0;
+    	line-height: 0;
+		@include transition(all 0.2s ease-in-out);
 		&:hover {
-			@include opacity(0.85);
-			@include transform (scale(1.0025) rotate(0.1deg));
-			//@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.05));
-			@include box-shadow (0 0 14px rgba(0, 0, 0, 0.0085));
-			border-color: darken($border-color, 5%);
+			//@include opacity(0.8);
+			
+			//@include transform (scale(1.0025) rotate(0.1deg));
+			//@include box-shadow (0 0 14px rgba(0, 0, 0, 0.0085));
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+				left: 2px;
+				background: transparent;				
+				z-index: -1;
+				@include box-shadow (0 0 18px rgba(0, 0, 0, 0.125));
+			}
+		}
+		&:before {
+			@include transition(all 0.2s ease-in-out);
+		}
+		&:after {
+			@include transition(all 0.2s ease-in-out);
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+			background: transparent;
+			border: 1px solid rgba(0,0,0, 0.2033);
 		}
 	}
 }

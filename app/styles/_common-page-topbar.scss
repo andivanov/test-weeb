@@ -1,13 +1,13 @@
 .page-topbar {
 
-	$height: 60px;
+	$height: 55px;
 	line-height: $height;
 	background: $white;
 	text-align: center;
 	font-size: $header-size;
 	@include font-semibold;	
 	&.height-increased {
-		height: 120px;
+		height: $height * 2;
 	}
 
 	&__menu {
@@ -19,7 +19,7 @@
 			position:relative;
 			@include transition(all 0.15s ease-in-out);
 			&:hover > .page-topbar__menu__dropdown__sub {
-				//display: block;
+				display: block;
 				@include opacity(1);
 			}
 			&__link {
@@ -32,7 +32,7 @@
 					position: relative;
 					top: -2px;
 					left: 2px;
-					color: $copy-color-light;
+					color: #B7BBBD;
 				}
 			}
 		}
@@ -56,6 +56,7 @@
 				white-space: nowrap;
 				z-index: 100;
 				@include opacity(0);
+				display: none;
 				&:after {
 					$dimensions: 10px;
 
@@ -113,7 +114,7 @@
 
 @media screen and (min-width: $M){
 	.page-topbar {
-		$height: 60px;
+		$height: 55px;
 		height: $height;
 		&.height-increased {
 			height: $height;

@@ -24,7 +24,7 @@ Note: Classes to rename to make it universal... and organize overall structure a
 
 // we displaying round background on hover 
 .marketplace-hero-carousel__arrow__triger:hover .marketplace-hero-carousel__arrow:before {
-	@include opacity(0.1);	
+	@include opacity(1);	
 }
 
 // we displaying arrow on hover 
@@ -34,8 +34,8 @@ Note: Classes to rename to make it universal... and organize overall structure a
 
 // adding shadow under the round background on hover
 .marketplace-hero-carousel__arrow:hover:before {
-	background: $black;
-	@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.025));
+	background: rgba(0,0,0, 0.3);
+	//@include single-box-shadow (0, 0, 4px, 2px, rgba(50, 50, 50, 0.025));
 }
 
 // changing arrow color to brighter one on hover
@@ -46,10 +46,10 @@ Note: Classes to rename to make it universal... and organize overall structure a
 
 //this is the round background styles
 .marketplace-hero-carousel__arrow:before {
-	$dimensions: 40px;
+	$dimensions: 35px;
 	content: "";
 	position: absolute;
-	background: $off-black;
+	background: rgba(0,0,0, 0.2);
 	display: block;
 	width: $dimensions;
 	height: $dimensions;
@@ -57,7 +57,7 @@ Note: Classes to rename to make it universal... and organize overall structure a
 	top: 50%;
 	margin-top: -$dimensions / 2;
 	@include opacity(0);
-	z-index: 1;
+	z-index: 10;
 	@include transition-duration(0.15s);
   	@include transition-timing-function(ease-in);
 }
@@ -65,7 +65,7 @@ Note: Classes to rename to make it universal... and organize overall structure a
 
 //this is the arrow styles
 .marketplace-hero-carousel__arrow:after {
-	$dimensions: 14px;
+	$dimensions: 12px;
 	content: "";
 	position: absolute;
 	display: block;
@@ -73,10 +73,10 @@ Note: Classes to rename to make it universal... and organize overall structure a
 	height: $dimensions;
 	top: 50%;
 	margin-top: -$dimensions / 2;
-	border-left: 3px solid $off-white;
-	border-bottom: 3px solid $off-white;
+	border-left: 2px solid $off-white;
+	border-bottom: 2px solid $off-white;
 	//@include rotate(45deg);
-	z-index: 2;
+	z-index: 15;
 	@include opacity(0);
 }
 
@@ -90,11 +90,11 @@ Note: Classes to rename to make it universal... and organize overall structure a
 }
 .marketplace-hero-carousel__arrow--left:before {
 	@extend .marketplace-hero-carousel__arrow:before;
-	left: 22px;
+	left: 32px;
 }
 .marketplace-hero-carousel__arrow--left:after {
 	@extend .marketplace-hero-carousel__arrow:after;
-	left: 37px;
+	left: 46px;
 	@include rotate(45deg);
 }
 .marketplace-hero-carousel__arrow--right:hover:before {
@@ -102,10 +102,10 @@ Note: Classes to rename to make it universal... and organize overall structure a
 }
 .marketplace-hero-carousel__arrow--right:before {
 	@extend .marketplace-hero-carousel__arrow:before;
-	right: 22px;
+	right: 32px;
 }
 .marketplace-hero-carousel__arrow--right:after {
 	@extend .marketplace-hero-carousel__arrow:after;
-	right: 37px;
+	right: 46px;
 	@include rotate(225deg);	
 }
