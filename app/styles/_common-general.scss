@@ -44,7 +44,7 @@ a {
 
 p {
 	line-height: 1.5;
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 
@@ -61,6 +61,11 @@ p {
 
 .border-bottom-1 {
 	border-bottom: 1px solid rgba(0,0,0, 0.1);
+	-webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.border-top-1 {
+	border-top: 1px solid rgba(212, 213, 214, 1);
 	-webkit-background-clip: padding-box;
     background-clip: padding-box;
 }

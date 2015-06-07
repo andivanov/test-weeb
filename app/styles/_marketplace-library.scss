@@ -30,8 +30,8 @@
 		vertical-align: top;
 		display: block;
 		border: 1px solid $border-color;
-		margin: 0 auto 20px;
-		padding: 16px 18px;
+		margin: 17px auto 0;
+		padding: 20px;
 		color: $copy-color;
 		background: $white;
 		text-align: left;
@@ -57,7 +57,7 @@
 			}
 		}
 		&__image {
-			margin-bottom: 6px;
+			margin-bottom: 10px;
 		}
 		&__header {
 			font-size: $font-size;
@@ -65,7 +65,7 @@
 			@include font-semibold;
 		}
 		&__rating {
-			margin-bottom: 2px;
+			margin-bottom: 4px;
 			i {
 				font-size: 13px;
 			}
@@ -74,11 +74,12 @@
 			color: #666c70;
 			font-size: $font-sizeSM;
 			margin-bottom: 4px;
-			line-height: 22px;
+			line-height: 21px;
 			@include font-semibold;
 		}
 		&__action {
-			color: $links-color;	
+			color: $links-color;
+			font-size: $font-size;
 		}
 	}
 }
@@ -88,7 +89,7 @@
 	.marketplace-library {
 		&__item {
 			display: inline-block;
-			margin: 0 8px 20px;
+			margin: 17px 8px 0;
 		}		
 	}	
 }
@@ -107,11 +108,11 @@
 	.marketplace-library {
 		width: 1100px;
 		padding: 0;
-		&__items {
-			&__wrapper {
-				height: 260px;
-			}
-		}
+		// &__items {
+		// 	&__wrapper {
+		// 		height: 260px;
+		// 	}
+		// }
 		&__item {
 			&:first-child {
 		 		margin-left: 0;

@@ -247,3 +247,9 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 
+
+
+$('div.marketplace-library').each(function(i) {
+  $(this).fadeOut(0).delay(500*i).fadeIn(750);
+});
+

@@ -1,5 +1,5 @@
 .app-hero-block {
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 	&__slideshow {
 		display: block;
 		width: 100%;
@@ -22,14 +22,14 @@
 				position: relative;
 				display: block;
 				&:before {
-					$dimensions: 10px;
+					$dimensions: 12px;
 					content: '';
 					position: absolute;
 					display: block;
 					width: $dimensions;
 					height: $dimensions;
-					background: $border-color-dark;
-					border: 2px solid $border-color-dark;
+					background: rgba(183, 187, 189, 1);
+					border: 2px solid rgba(183, 187, 189, 1);
 					@include border-radius(50%);
 					left: 50%;
 					top: 20px;
@@ -117,8 +117,8 @@
 
 @media screen and (min-width: $L){
 	.app-hero-block {
-		margin-bottom: 40px;
-		padding: 40px 0 60px;
+		margin-bottom: 66px;
+		padding: 40px 0 0 0;
 		&__slideshow {			
 			width: 705px;
 			display: inline-block;

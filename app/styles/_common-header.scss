@@ -14,17 +14,19 @@
 
 	// wraps header section
 	&__wrapper {
-		height: $header-wrapper-height;
+		//height: $header-wrapper-height;
 		color: $copy-color;
+		margin: 35px 0 0 0;
 	}
 
 	// subheader itself
 	&__sub {
 		font-size: $header-size;
-		margin-top: $header-content-top-margin;
+		//margin-top: $header-content-top-margin;
 		display: inline-block;
 		@include font-normal;
 		&--semibold {
+			margin-bottom: 10px;
 			@extend .header__sub;
 			@include font-semibold;
 		}
@@ -33,7 +35,7 @@
 	// links
 	&__action {
 		font-size: $font-size;
-		margin-top: $header-content-top-margin;
+		//margin-top: $header-content-top-margin;
 		&--right {
 			@extend .header__action;
 			float: right;
