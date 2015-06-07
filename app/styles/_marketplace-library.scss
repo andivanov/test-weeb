@@ -25,35 +25,57 @@
 	display: block;
 	vertical-align: top;
 	&__item {
-		width: 200px;
+		width: 202px;
 		max-height: 260px;
 		vertical-align: top;
 		display: block;
 		border: 1px solid $border-color;
 		margin: 0 auto 20px;
-		padding: 16px;
+		padding: 16px 18px;
 		color: $copy-color;
 		background: $white;
 		text-align: left;
+		position: relative;
   		@include transition(all 0.15s ease-in-out);
 		&:hover {
 			color: inherit;
 			border-color: $links-color-hover;
-			@include transform (scale(1.005) rotate(0.1deg));
+			//@include transform (scale(1.005) rotate(0.1deg));
 			//@include single-box-shadow (0, 0, 14px, -4px, rgba(0, 0, 0, 0.085));
 			@include box-shadow (0 0 14px rgba(0, 0, 0, 0.085));
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+				left: 2px;
+				background: transparent;				
+				z-index: -1;
+				@include box-shadow (0 0 18px rgba(0, 0, 0, 0.125));
+			}
+		}
+		&__image {
+			margin-bottom: 6px;
 		}
 		&__header {
 			font-size: $font-size;
-			margin-bottom: 8px;
+			margin-bottom: 4px;
+			@include font-semibold;
 		}
 		&__rating {
-			margin-bottom: 8px;
+			margin-bottom: 2px;
+			i {
+				font-size: 13px;
+			}
 		}
 		&__discription {
-			color: $accent-color;
+			color: #666c70;
 			font-size: $font-sizeSM;
-			margin-bottom: 8px;
+			margin-bottom: 4px;
+			line-height: 22px;
+			@include font-semibold;
 		}
 		&__action {
 			color: $links-color;	
@@ -66,7 +88,7 @@
 	.marketplace-library {
 		&__item {
 			display: inline-block;
-			margin: 0 10px 20px;
+			margin: 0 8px 20px;
 		}		
 	}	
 }
@@ -85,6 +107,11 @@
 	.marketplace-library {
 		width: 1100px;
 		padding: 0;
+		&__items {
+			&__wrapper {
+				height: 260px;
+			}
+		}
 		&__item {
 			&:first-child {
 		 		margin-left: 0;

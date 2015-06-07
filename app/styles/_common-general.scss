@@ -61,9 +61,13 @@ p {
 
 .border-bottom-1 {
 	border-bottom: 1px solid rgba(0,0,0, 0.1);
+	-webkit-background-clip: padding-box;
+    background-clip: padding-box;
 }
 .border-bottom-2 {
-	border-bottom: 2px solid $border-color;
+	border-bottom: 2px solid rgba(0,0,0, 0.1);
+	-webkit-background-clip: padding-box;
+    background-clip: padding-box;
 }
 
 
@@ -78,6 +82,7 @@ p {
 		&--full-width {
 			@extend .fixed;
 			width: 100%;
+			@include box-shadow (0 2px 0 rgba(0, 0, 0, 0.1));
 		}
 		+ * {
 			padding-top: 55px;

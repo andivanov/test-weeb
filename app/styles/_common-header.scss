@@ -9,8 +9,8 @@
 
 
 .header {
-	$header-wrapper-height: 80px;
-	$header-content-top-margin: 40px;
+	$header-wrapper-height: 75px;
+	$header-content-top-margin: 36px;
 
 	// wraps header section
 	&__wrapper {
@@ -37,6 +37,7 @@
 		&--right {
 			@extend .header__action;
 			float: right;
+			margin-right: 9px;
 		}
 		&--left {
 			@extend .header__action;
