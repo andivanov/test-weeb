@@ -33,19 +33,20 @@
 	border-top: 1px solid $border-color;
 	//app total rating
 	&__rating__total {
-		margin: 0 0 50px 0;
+		margin: 0 0 30px 0;
 		i {
 			font-size: $header-size;
+			margin-right: 6px;
 		}
 		&__number {
 			color: $copy-color;
-			margin-left: 16px;
+			margin-left: 10px;
 		}
 	}
 
 	//user reivews 
 	&__user {
-		$vertical-rythm: 	10px;
+		$vertical-rythm: 	5px;
 		&__blockquote {
 			@include font-semibold;
 			margin-bottom: $vertical-rythm;
@@ -53,21 +54,28 @@
 
 		&__rating {
 			display: inline-block;
+			i {
+				font-size: 13px;
+			}
 		}
 		&__name {
 			display: inline-block;
-			margin: 0 0 $vertical-rythm 10px;
+			margin: 0 0 5px 4px;
 		}	
 		&__reviewDate {
 			display: inline-block;
-			margin-bottom: $vertical-rythm;
+			margin-bottom: 5px;
 			color: $copy-color-light;
 			&:before {
 				content: " - ";
 			}
 		}
 		&__review {
-			margin-bottom: $vertical-rythm * 3;
+			margin-bottom: 22px;
+			&__read-full-article {
+				display: block;
+				margin-top: 8px;
+			}
 		}
 	}
 }

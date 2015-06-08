@@ -35,8 +35,8 @@ a {
 	color: $links-color;
 	text-decoration: none;
 	@include font-semibold;
-	@include transition-duration(0.10s);
-  	@include transition-timing-function(ease-in);
+	//@include transition-duration(0.15s);
+  	//@include transition-timing-function(ease-in);
 	&:hover {
 		color: $links-color-hover;
 	}
@@ -44,7 +44,7 @@ a {
 
 p {
 	line-height: 1.5;
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 
@@ -75,7 +75,9 @@ p {
     background-clip: padding-box;
 }
 
-
+.white {
+	background: $white;
+}
 
 
 

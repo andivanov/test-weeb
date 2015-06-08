@@ -104,7 +104,13 @@
 			position: relative;
 			top: 2px;
 			left: -2px;
-			//color: $copy-color-light;
+			@include transition-duration(0.075s);
+  			@include transition-timing-function(ease-in-out); 
+		}
+		&:hover {
+			i {
+				left: -4px;
+			}
 		}
 	}
 }

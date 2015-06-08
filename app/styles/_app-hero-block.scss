@@ -12,6 +12,68 @@
 		}
 		&__item {
 			background: $white;
+			position: relative;
+			z-index: 1;
+			padding: 10px 40px 10px;
+			cursor: pointer;
+			@include transition-duration(0.15s);
+  			@include transition-timing-function(ease-in);
+			&:hover {
+				&:before {
+					@include opacity(1);
+				}
+				&:after {
+					@include opacity(1);
+				}
+			}
+			$local-dimensions: 40px;
+			$local-font-size: 30px;
+			$local-border-radius: 50%;
+			$local-color: rgba(0,0,0, 0.15); 	
+			&:before {
+				@include transition-duration(0.15s);
+  				@include transition-timing-function(ease-in);
+				content: "\f104";
+				font-family: "FontAwesome";
+				font-size: $local-font-size;
+				display: block;
+				width: $local-dimensions;
+				height: $local-dimensions;
+				border-radius: $local-border-radius;
+				color: $local-color;
+				position: absolute;
+				top: 50%;
+				margin-top: -$local-dimensions / 2;
+				left: 20px;
+				z-index: 2;
+				border: 1px solid $local-color;
+				background: transparent;
+				line-height: 36px;
+				padding-left: 12px;
+				@include opacity(0);
+			}
+			&:after {
+				@include transition-duration(0.15s);
+  				@include transition-timing-function(ease-in);
+				content: "\f105";
+				font-family: "FontAwesome";
+				font-size: $local-font-size;
+				display: block;
+				width: $local-dimensions;
+				height: $local-dimensions;
+				border-radius: $local-border-radius;
+				color: $local-color;
+				position: absolute;
+				top: 50%;
+				margin-top: -$local-dimensions / 2;
+				right: 20px;
+				z-index: 2;
+				border: 1px solid $local-color;
+				background: transparent;
+				line-height: 36px;
+				text-indent: 15px;
+				@include opacity(0);
+			}
 			img {
 				display: block;
 				margin: 0 auto;
@@ -32,7 +94,7 @@
 					border: 2px solid rgba(183, 187, 189, 1);
 					@include border-radius(50%);
 					left: 50%;
-					top: 20px;
+					bottom: -42px;
 					margin-left: -$dimensions / 2;
 				}
 				&--active {
@@ -50,7 +112,7 @@
 		display: block;
 		width: 340px;
 		border: 1px solid $border-color;
-		padding: 40px 0 0 40px;
+		padding: 37px 0 0 38px;
 		margin: 40px auto;
 		vertical-align: top;
 		height: 442px;
@@ -59,16 +121,20 @@
 		&__name {
 			font-size: 28px;
 			@include font-normal;
-			margin-top: 20px;
-			margin-bottom: 6px;
+			margin-top: 6px;
+			margin-bottom: 2px;
 		}
 
 		//stars with # of reviews
 		&__rating {
-			margin-bottom: 26px;
+			margin-bottom: 22px;
+			i {
+				font-size: 13px;
+			}
 			&__total {
 				font-size: 14px;
-				color: $copy-color-light;
+				color: #80868a;
+				margin-left: 4px;
 			}
 		}
 
@@ -76,22 +142,45 @@
 		&__action {
 			display: inline-block;
 			width: 174px;
+			height: 44px;
+			line-height: 40px;
 			text-align: center;
-			padding: 10px 0;
-			border: 2px solid $border-color;
+			border: 2px solid rgba(0, 0, 0, 0.15);
 			@include border-radius(50px);
 			@include font-semibold;
 			color: $copy-color;
 			margin-bottom: 40px;
+			overflow: hidden;
+			position: relative;
+			span {
+				z-index: 20;
+			}
+			 &:after {
+			    background: rgba(115, 206, 244, 0.1);
+			    content: "";
+			    height: 155px;
+			    left: -75px;
+			    position: absolute;
+			    top: -50px;
+			    @include rotate(35deg);
+			    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			    width: 50px;
+			    z-index: -10;
+			}
 			&:hover {
-				border: 2px solid darken($border-color, 20%);
+				border: 2px solid rgba(0, 0, 0, 0.2);
 				color: darken($copy-color, 5%);
+				&:after {
+    				left: 120%;
+    				transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    				z-index: 100;
+  				}
 			}
 		}
 
 		//additional details
 		&__info {
-			line-height: 36px;
+			line-height: 44px;
 			&__item {
 				@include font-semibold;
 				border-bottom: 1px solid $border-color;
@@ -105,12 +194,10 @@
 
 
 
-
-
-
 @media screen and (min-width: $M){
 	.app-hero-block {
 		padding: 0;
+
 	}
 }
 
@@ -125,6 +212,14 @@
 			margin-right: 20px;
 			border-left: 1px solid $border-color;
 			border-right: 1px solid $border-color;
+			&__item {
+				height: 434px;
+				&__link {
+					&:before {
+						bottom: -72px;
+					}
+				}
+			}
 		}	
 		&__details {
 			width: 297px;
@@ -143,11 +238,14 @@
 		&__slideshow {			
 			width: 716px;
 			margin-right: 40px;
+			&__item {
+				height: 440px;
+			}
 		
 		}	
 		&__details {
 			width: 344px;
-			padding: 40px 0 0 40px;
+			padding: 37px 0 0 38px;
 			height: 442px;
 		}
 	}

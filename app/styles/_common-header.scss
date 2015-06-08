@@ -35,15 +35,36 @@
 	// links
 	&__action {
 		font-size: $font-size;
-		//margin-top: $header-content-top-margin;
 		&--right {
 			@extend .header__action;
 			float: right;
 			margin-right: 9px;
+			i {
+				@include transition-duration(0.075s);
+  				@include transition-timing-function(ease-in-out);
+				position: relative;
+				right: 0;
+			}
+			&:hover {
+				i {
+					right: -2px;
+				}
+			}
 		}
 		&--left {
 			@extend .header__action;
 			float: left;
+			i {
+				@include transition-duration(0.075s);
+  				@include transition-timing-function(ease-in-out);
+				position: relative;
+				left: 0;
+			}
+			&:hover {
+				i {
+					left: -2px;
+				}
+			}
 		}
 		i {
 			font-weight: 700;
