@@ -1,5 +1,8 @@
 //$('.currentYear').html(new Date().getFullYear());
 
+$('div.marketplace-library').each(function(i) {
+  $(this).fadeOut(0).delay(500*i).fadeIn(300);
+});
 
 Retina = function() {
 	'use strict';
@@ -245,11 +248,4 @@ if ( typeof define === 'function' && define.amd ) {
 
 } )( window );
 
-
-
-
-
-$('div.marketplace-library').each(function(i) {
-  $(this).fadeOut(0).delay(500*i).fadeIn(750);
-});
 
